@@ -310,6 +310,9 @@ nav a {
 }
 
 .social-media-container-feature {
+display: none;
+}
+  /*
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,7 +321,8 @@ nav a {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-}
+
+*/
 
 /*============ Team ============ */
 
@@ -533,10 +537,6 @@ nav a {
   align-items: baseline; */
 }
 
-.social-media-container {
-  margin: 0 auto;
-}
-
 .social-media-text {
   text-align: center;
   font-weight: 500;
@@ -544,7 +544,6 @@ nav a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -581,7 +580,6 @@ nav a {
 }
 
 .subscribe-container {
-  margin: 0 auto;
   gap: 16px;
   margin-top: 72px;
   margin-bottom: 96px;
@@ -906,15 +904,13 @@ nav a {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 15px;
-  }
+      }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
   }
 }
 
@@ -981,12 +977,6 @@ nav a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .social-media-container-feature {
-    display: none;
-  }
-}
-
 /*============ Team ============ */
 
 @media screen and (min-width: 768px) {
@@ -1003,9 +993,9 @@ nav a {
 /*============ Portfolio ============ */
 
 @media screen and (min-width: 768px) {
-  .portfoli-list {
+    .portfolio-list-item {
+    margin: 0 auto;
     gap: 24px;
-    margin: o auto;
   }
 }
 
@@ -1014,7 +1004,7 @@ nav a {
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
-    margin: 0 auto;
+        justify-content: left;
   }
 }
 
@@ -1045,6 +1035,17 @@ nav a {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+  }
+
+  .social-media-container-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
   }
 
   .team-list {

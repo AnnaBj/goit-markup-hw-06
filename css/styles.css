@@ -116,10 +116,8 @@ nav a {
 }
 
 .navigation-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  /* padding-right: 156px; */
+  display: none;
+
 }
 
 .navigation-list-item {
@@ -168,8 +166,7 @@ nav a {
 }
 
 .contacts-list {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 
 .contacts-list-item {
@@ -188,6 +185,10 @@ nav a {
 .contacts-list-link:hover,
 .contacts-list-link:focus {
   color: #404bbf;
+}
+
+.menu-open-btn {
+  margin: 0 auto;
 }
 
 /*============ Header1 ============ */
@@ -944,6 +945,13 @@ nav a {
   .container-navigation {
     flex-direction: row;
   }
+
+  .navigation-list {
+      display: flex;
+  justify-content: center;
+  gap: 20px;
+ 
+  }
 }
 /*============ Hero ============ */
 
@@ -1055,8 +1063,14 @@ nav a {
     justify-content: flex-start;
     gap: 40px;
     padding-right: 156px;
+    
   }
 
+  .contacts-list {
+    display: flex;
+  gap: 40px;
+  }
+  
   .contacts-list-item {
     font-size: 16px;
     line-height: 1.5;

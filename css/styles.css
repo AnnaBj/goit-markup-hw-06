@@ -46,8 +46,8 @@ body {
 
 /* Container */
 .container {
-  max-width: 1158px;
-  width: 1158px;
+  max-width: 288px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -200,6 +200,11 @@ nav a {
   z-index: 1;
   padding: 24px 24px 40px 16px;
   visibility: hidden;
+  opacity: 0;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+    /*justify-content: space-between;*/
 }
 
 .menu-close-btn {
@@ -225,10 +230,6 @@ nav a {
   fill: transparent;
 }
 
-.mob-navigation-list {
-  margin-bottom: 168px;
-}
-
 .mob-menu-link {
   color: #2e2f42;
   font-size: 36px;
@@ -242,6 +243,10 @@ nav a {
   color: #404bbf;
 }
 
+.mob-navigation-list {
+  margin-bottom: 40px;
+}
+
 .mob-navigation-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -250,7 +255,6 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
   gap: 24px;
   margin-bottom: 48px;
 }
@@ -260,6 +264,7 @@ nav a {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  margin-top: auto;
 }
 
 .mob-social-icon {
@@ -420,6 +425,7 @@ nav a {
 .team-list {
   flex-wrap: wrap;
   cursor: pointer;
+  margin-bottom: 72px;
 }
 
 .team-list-item {
@@ -552,7 +558,7 @@ nav a {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 320px;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .studio-white {
@@ -585,6 +591,13 @@ nav a {
 
   /*
   align-items: baseline; */
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .social-media-text {
@@ -649,7 +662,7 @@ nav a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
 }
 
 .subscribe-container-input {
@@ -968,9 +981,9 @@ nav a {
   }
 }
 
-/*============ Navigation logo ============ */
+@media screen and (min-width: 767px) and (max-width: 1157px) {
+  /*============ Navigation logo ============ */
 
-@media screen and (min-width: 768px) {
   .navigation-list {
     display: flex;
     padding-right: 0;
@@ -994,124 +1007,124 @@ nav a {
     line-height: 1.17;
     letter-spacing: 0.03em;
   }
-}
 
 /*============ Navigation menu ============ */
 
-@media screen and (min-width: 768px) {
-  .container-navigation {
-    flex-direction: row;
-  }
-
-  .navigation-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
+.container-navigation {
+  flex-direction: row;
 }
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 /*============ Hero ============ */
 
-@media screen and (min-width: 768px) {
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tab.jpg);
+  padding: 100px 0;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg-tab.jpg);
-    padding: 100px 0;
+      url(../images/Dark-bg-tab-2x.jpg);
   }
+}
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/Dark-bg-tab-2x.jpg);
-    }
-  }
-
-  .main-title {
-    color: #fff;
-    max-width: 496px;
-    margin: 0 auto;
-  }
+.main-title {
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 /*============ Feature ============ */
 
-@media screen and (min-width: 768px) {
-  .feature-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    cursor: pointer;
-    margin: 0 auto;
-    gap: 72px 24px;
-  }
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  cursor: pointer;
+  margin: 0 auto;
+  gap: 72px 24px;
+}
 
-  .feature-item {
-    width: calc((100% - 24px) / 2);
-    gap: 8px;
-  }
+.feature-item {
+  width: calc((100% - 24px) / 2);
+  gap: 8px;
+}
 
-  .section-subtitle {
-    text-align: left;
-  }
+.section-subtitle {
+  text-align: left;
 }
 
 /*============ Team ============ */
 
-@media screen and (min-width: 768px) {
-  .container.team-container {
-    max-width: 584px;
-  }
+.container.team-container {
+  max-width: 584px;
+}
 
-  .team-list {
-    display: flex;
-    gap: 64px 24px;
-  }
+.team-list {
+  display: flex;
+  gap: 64px 24px;
+}
 
-  .team-list-item {
-    width: calc((100% - 24px) / 2);
-    margin-bottom: 0;
-  }
+.team-list-item {
+  width: calc((100% - 24px) / 2);
+  margin-bottom: 0;
 }
 
 /*============ Portfolio ============ */
 
-@media screen and (min-width: 768px) {
-  .portfolio-list {
-    gap: 24px;
-  }
+.portfolio-list {
+  gap: 24px;
 }
 
 /*============ Footer ============ */
 
-@media screen and (min-width: 768px) {
-  .container.footer-container {
-    max-width: 584px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-  }
-
-  .subscribe-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 24px;
-  }
-
-  .subscribe-container-text {
-    text-align: left;
-  }
+.container.footer-container {
+  max-width: 584px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+  width: max-content;
 }
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 24px;
+}
+
+.subscribe-container-text {
+  text-align: left;
+}
+}
+
 
 /* Styles for desktops (1158px and above) */
 @media screen and (min-width: 1158px) {
+  /* Container */
+.container {
+  max-width: 1158px;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
   .navigation-list {
     display: flex;
     justify-content: flex-start;
@@ -1131,19 +1144,19 @@ nav a {
   }
 
   .hero {
-      background-color: #2e2f42;
+    background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      color: #f4f4fd;
-      padding: 188px 0;
-      max-width: 1440px;
-      margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f4f4fd;
+    padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   @media (min-device-pixel-ratio: 2),

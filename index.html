@@ -28,6 +28,15 @@
           <a class="logo" href="./index.html"
             >Web<span class="studio">Studio</span>
           </a>
+
+          <div class="menu-open-btn-mob">
+            <button type="button" class="menu-open-btn">
+              <svg class="menu-open-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+              </svg>
+            </button>
+          </div>
+
           <ul class="navigation-list">
             <li class="navigation-list-item">
               <a class="menu-link current" href="./index.html">Studio</a>
@@ -55,13 +64,8 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open-btn">
-          <svg class="menu-open-btn-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
-          </svg>
-        </button>
-      </div>
-
+      
+           
       <div class="mob-menu">
         <div>
           <button type="button" class="menu-close-btn">
@@ -81,6 +85,7 @@
             </li>
           </ul>
         </div>
+
         <ul class="mob-contacts-list">
           <li class="mob-contacts-list-item">
             <a
@@ -126,6 +131,7 @@
           </li>
         </ul>
       </div>
+    </div>
     </header>
     <!------------ Main content ------------>
     <main class="main-content">
@@ -140,7 +146,7 @@
 
       <!------------ Section 2 Feature ------------>
       <section class="feature">
-        <div class="container">
+        <div class="container container-feature">
           <h2 class="visually-hidden">Features</h2>
           <ul class="feature-list">
             <li class="feature-item">
@@ -455,33 +461,33 @@
             <li class="team-list-item">
               <picture class="team-picture">
                 <source
-                srcset="
-                  ./images/ourTeam4-desktop-1x.jpg 1x,
-                  ./images/ourTeam4-desktop-2x.jpg 2x
-                "
-                media="(min-width: 1158px)"
-              />
-              <source
-                srcset="
-                  ./images/ourTeam4-tab-1x.jpg 1x,
-                  ./images/ourTeam4-tab-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/ourTeam4-mob-1x.jpg 1x,
-                  ./images/ourTeam4-mob-2x.jpg 2x
-                "
-                media="(min-width: 320px)"
-              />
-              <img
+                  srcset="
+                    ./images/ourTeam4-desktop-1x.jpg 1x,
+                    ./images/ourTeam4-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourTeam4-tab-1x.jpg 1x,
+                    ./images/ourTeam4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourTeam4-mob-1x.jpg 1x,
+                    ./images/ourTeam4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
                   src="./images/ourTeam1.jpg"
                   alt="our-team-4"
                   width="264"
                   height="260"
                 />
-                            </picture>
+              </picture>
               <div class="team-member-info">
                 <h3 class="section-subtitle-team">Daniel Wilson</h3>
                 <p class="section-text-team">UI Designer</p>
@@ -553,21 +559,21 @@
                 <picture class="portfolio-picture">
                   <source
                     srcset="
-                      ./images/Portfolio1-desktop.jpg 1x,
+                      ./images/Portfolio1-desktop.jpg    1x,
                       ./images/Portfolio1-desktop-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio1-tab.jpg 1x,
+                      ./images/Portfolio1-tab.jpg    1x,
                       ./images/Portfolio1-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio1-mob.jpg 1x,
+                      ./images/Portfolio1-mob.jpg    1x,
                       ./images/Portfolio1-mob-2x.jpg 2x
                     "
                     media="(min-width: 320px)"
@@ -597,32 +603,32 @@
                 <picture class="portfolio-picture">
                   <source
                     srcset="
-                      ./images/Portfolio2-desktop.jpg 1x,
+                      ./images/Portfolio2-desktop.jpg    1x,
                       ./images/Portfolio2-desktop-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio2-tab.jpg 1x,
+                      ./images/Portfolio2-tab.jpg    1x,
                       ./images/Portfolio2-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio2-mob.jpg 1x,
+                      ./images/Portfolio2-mob.jpg    1x,
                       ./images/Portfolio2-mob-2x.jpg 2x
                     "
                     media="(min-width: 320px)"
                   />
-                                  <img
-                  src="./images/Portfolio2-desktop.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
-              </picture>
+                  <img
+                    src="./images/Portfolio2-desktop.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -641,31 +647,31 @@
                 <picture class="portfolio-picture">
                   <source
                     srcset="
-                      ./images/Portfolio3-desktop.jpg 1x,
+                      ./images/Portfolio3-desktop.jpg    1x,
                       ./images/Portfolio3-desktop-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio3-tab.jpg 1x,
+                      ./images/Portfolio3-tab.jpg    1x,
                       ./images/Portfolio3-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio3-mob.jpg 1x,
+                      ./images/Portfolio3-mob.jpg    1x,
                       ./images/Portfolio3-mob-2x.jpg 2x
                     "
                     media="(min-width: 320px)"
                   />
-                <img
-                  src="./images/Portfolio3-desktop.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                  <img
+                    src="./images/Portfolio3-desktop.jpg"
+                    alt="Meditation App"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
 
                 <p class="portfolio-list-item-text">
@@ -685,31 +691,31 @@
                 <picture class="portfolio-picture">
                   <source
                     srcset="
-                      ./images/Portfolio4-desktop.jpg 1x,
+                      ./images/Portfolio4-desktop.jpg    1x,
                       ./images/Portfolio4-desktop-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio4-tab.jpg 1x,
+                      ./images/Portfolio4-tab.jpg    1x,
                       ./images/Portfolio4-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio4-mob.jpg 1x,
+                      ./images/Portfolio4-mob.jpg    1x,
                       ./images/Portfolio4-mob-2x.jpg 2x
                     "
                     media="(min-width: 320px)"
                   />
-                                <img
-                  src="./images/Portfolio4-desktop.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                  <img
+                    src="./images/Portfolio4-desktop.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
 
                 <p class="portfolio-list-item-text">
@@ -726,35 +732,35 @@
 
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-img-text">
-
-<picture class="portfolio-picture">
+                <picture class="portfolio-picture">
                   <source
                     srcset="
-                      ./images/Portfolio5-desktop.jpg 1x,
+                      ./images/Portfolio5-desktop.jpg    1x,
                       ./images/Portfolio5-desktop-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio5-tab.jpg 1x,
+                      ./images/Portfolio5-tab.jpg    1x,
                       ./images/Portfolio5-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio5-mob.jpg 1x,
+                      ./images/Portfolio5-mob.jpg    1x,
                       ./images/Portfolio5-mob-2x.jpg 2x
                     "
-                    media="(min-width: 320px)" />
-               
-                                <img
-                  src="./images/Portfolio5-desktop.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                    media="(min-width: 320px)"
+                  />
+
+                  <img
+                    src="./images/Portfolio5-desktop.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
 
                 <p class="portfolio-list-item-text">
@@ -774,119 +780,31 @@
                 <picture class="portfolio-picture">
                   <source
                     srcset="
-                      ./images/Portfolio2-desktop.jpg 1x,
-                      ./images/Portfolio2-desktop-2x.jpg 2x
-                    "
-                    media="(min-width: 1158px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/Portfolio2-tab.jpg 1x,
-                      ./images/Portfolio2-tab-2x.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/Portfolio2-mob.jpg 1x,
-                      ./images/Portfolio2-mob-2x.jpg 2x
-                    "
-                    media="(min-width: 320px)"
-                  />
-                                  <img
-                  src="./images/Portfolio2-desktop.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
-              </picture>
-
-                <p class="portfolio-list-item-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App"; position: absolute;
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="section-subtitle-portfolio">Cashless Payment</h3>
-                <p class="section-text-portfolio">Marketing</p>
-              </div>
-            </li>
-
-            <li class="portfolio-list-item">
-              <div class="portfolio-list-item-img-text">
-                <picture class="portfolio-picture">
-                  <source
-                    srcset="
-                      ./images/Portfolio3-desktop.jpg 1x,
-                      ./images/Portfolio3-desktop-2x.jpg 2x
-                    "
-                    media="(min-width: 1158px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/Portfolio3-tab.jpg 1x,
-                      ./images/Portfolio3-tab-2x.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/Portfolio3-mob.jpg 1x,
-                      ./images/Portfolio3-mob-2x.jpg 2x
-                    "
-                    media="(min-width: 320px)"
-                  />
-                <img
-                  src="./images/Portfolio5-desktop.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
-                </picture>
-
-                <p class="portfolio-list-item-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="section-subtitle-portfolio">Meditation App</h3>
-                <p class="section-text-portfolio">App</p>
-              </div>
-            </li>
-
-            <li class="portfolio-list-item">
-              <div class="portfolio-list-item-img-text">
-                <picture class="portfolio-picture">
-                  <source
-                    srcset="
-                      ./images/Portfolio6-desktop.jpg 1x,
+                      ./images/Portfolio6-desktop.jpg    1x,
                       ./images/Portfolio6-desktop-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio6-tab.jpg 1x,
+                      ./images/Portfolio6-tab.jpg    1x,
                       ./images/Portfolio6-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/Portfolio6-mob.jpg 1x,
+                      ./images/Portfolio6-mob.jpg    1x,
                       ./images/Portfolio6-mob-2x.jpg 2x
                     "
                     media="(min-width: 320px)"
                   />
-                <img
-                  src="./images/Portfolio6-desktop.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                  <img
+                    src="./images/Portfolio6-desktop.jpg"
+                    alt="Online Courses"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
 
                 <p class="portfolio-list-item-text">
@@ -1056,7 +974,7 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="label-privacy" href="">Privacy Policy</a>
+              <a class="privacy-policy-link">Privacy Policy</a>
             </label>
           </div>
 

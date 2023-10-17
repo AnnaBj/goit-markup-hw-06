@@ -1322,6 +1322,11 @@ nav a {
     margin-left: 156px;
   }
 
+  .navigation-menu {
+    display: flex;
+    align-items: center;
+  }
+
   .navigation-list {
     display: flex;
     justify-content: flex-start;
@@ -1382,35 +1387,31 @@ nav a {
     }
 
     .feature {
-      min-width: 1158px;
       width: 100%;
-      padding-top: 120px;
-      padding-bottom: 120px;
+          padding: 120px 0;
     }
 
     .feature-list {
       width: 100%;
+      display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      flex-wrap: nowrap;
-      gap: 72px 24px;
+            gap: 24px;
     }
 
     .feature-item {
-      width: 264px;
+      width: calc((100% - 72px) / 4);
     }
 
     .social-media-container-feature {
-      width: 264px;
-      height: 112px;
+      display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 8px;
+      height: 112px;
+      background-color: #f4f4fd;
       border-radius: 4px;
-      border: 1px solid #8e8f99;
-      background: #f4f4fd;
-      flex-shrink: 0;
+      margin-bottom: 8px;
     }
 
     .section-subtitle {
@@ -1434,7 +1435,11 @@ nav a {
     }
 
     .team-list {
-      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      /*
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -1444,32 +1449,132 @@ nav a {
     }
 
     .team-list-item {
-      width: 100%;
-      max-width: 360px;
-      max-height: 420px;
+      flex-basis: calc((100% - 72px) / 4);
+      width: calc((100% - 72px) / 4);
+      border-radius: 0px 0px 4px 4px;
+      background-color: #ffffff;
+      text-align: center;
+      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
+    
+.team-member-info {
+  padding: 32px 0;
+}
+
+.section-subtitle-team {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-text-team {
+  text-align: center;
+}
+
+.social-media-icon-team {
+  fill: #f4f4fd;
+}
+
+.social-media-list-team {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-media-item-team {
+  width: 40px;
+  height: 40px;
+}
+
+
+.social-media-link-team {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-link-team:hover,
+.social-media-link-team:focus {
+  background-color: #404bbf;
+}
+
     .portfolio {
-      padding: 120px 0;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 120px;
+      padding-bottom: 120px;
     }
 
     .portfolio-list {
       display: flex;
       align-items: center;
       justify-content: center;
-      column-gap: 24px;
+      gap: 24px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
       row-gap: 48px;
+      padding-bottom: 0px;
       flex-direction: row;
-      /* flex-wrap: wrap; */
+      align-items: flex-start;
     }
 
     .portfolio-list-item {
-      max-width: 360px;
-      max-height: 420px;
+      width: 360px;
+    
       flex-shrink: 0;
-      width: calc((100% - 48px) / 3);
+      width: calc((100%-48px) / 3);
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .portfolio-list-item:hover {
+      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+    
+    .portfolio-list-item:hover .portfolio-list-item-text {
+      transform: translateY(0%);
+    }
+    
+    .portfolio-info {
+      padding: 32px 16px;
+      border: 1px solid #e7e9fc;
+      border-top: none;
+    }
+    
+    
+.portfolio-list-item-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio.container {
+  transform: translateY(0%);
+}
+
+.portfolio-list-item-img-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-subtitle-portfolio {
+  margin-bottom: 8px;
+}
 
     .footer {
       /* display: flex;

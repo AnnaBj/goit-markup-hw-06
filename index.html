@@ -29,12 +29,85 @@
             >Web<span class="studio">Studio</span>
           </a>
 
-          <div class="menu-open-btn-mob">
-            <button type="button" class="menu-open-btn">
-              <svg class="menu-open-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
-              </svg>
-            </button>
+          <button type="button" class="menu-open-btn-mob">
+            <svg class="menu-open-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+          </button>
+
+          <div class="mob-menu">
+            <div class="container mob-container">
+              <div>
+                <button type="button" class="menu-close-btn">
+                  <svg class="menu-close-btn-icon" width="8" height="8">
+                    <use
+                      href="./images/icons.svg#icon-close-black-18dp-2-1"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="mob-navigation-list">
+                  <li class="mob-navigation-list-item">
+                    <a class="mob-menu-link current" href="./index.html"
+                      >Studio</a
+                    >
+                  </li>
+                  <li class="mob-navigation-list-item">
+                    <a class="mob-menu-link" href>Portfolio</a>
+                  </li>
+                  <li class="mob-navigation-list-item">
+                    <a class="mob-menu-link" href>Contacts</a>
+                  </li>
+                </ul>
+              </div>
+
+              <address class="mob-address">
+                <ul class="mob-contacts-list">
+                  <li class="mob-contacts-list-item">
+                    <a
+                      class="mob-contacts-list-link current"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="mob-contacts-list-item">
+                    <a class="mob-contacts-list-link" href="tel:+110001111111"
+                      >+11(000)111-11-11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+
+              <ul class="mob-social-media-list">
+                <li class="mob-social-media-item">
+                  <a class="mob-social-media-link" href>
+                    <svg class="mob-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-media-item">
+                  <a class="mob-social-media-link" href>
+                    <svg class="mob-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-media-item">
+                  <a class="mob-social-media-link" href>
+                    <svg class="mob-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-media-item">
+                  <a class="mob-social-media-link" href>
+                    <svg class="mob-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <ul class="navigation-list">
@@ -64,72 +137,6 @@
             </li>
           </ul>
         </address>
-
-        <div class="mob-menu">
-          <div>
-            <button type="button" class="menu-close-btn">
-              <svg class="menu-close-btn-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-              </svg>
-            </button>
-            <ul class="mob-navigation-list">
-              <li class="mob-navigation-list-item">
-                <a class="mob-menu-link current" href="./index.html">Studio</a>
-              </li>
-              <li class="mob-navigation-list-item">
-                <a class="mob-menu-link" href>Portfolio</a>
-              </li>
-              <li class="mob-navigation-list-item">
-                <a class="mob-menu-link" href>Contacts</a>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="mob-contacts-list">
-            <li class="mob-contacts-list-item">
-              <a
-                class="mob-contacts-list-link current"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="mob-contacts-list-item">
-              <a class="mob-contacts-list-link" href="tel:+110001111111"
-                >+11(000)111-11-11</a
-              >
-            </li>
-          </ul>
-          <ul class="mob-social-media-list">
-            <li class="mob-social-media-item">
-              <a class="mob-social-media-link" href>
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-media-item">
-              <a class="mob-social-media-link" href>
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-media-item">
-              <a class="mob-social-media-link" href>
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-media-item">
-              <a class="mob-social-media-link" href>
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
     <!------------ Main content ------------>
@@ -204,40 +211,16 @@
       </section>
       <!------------ Section 3 our team ------------>
       <section class="team">
-        <div class="container team-container">
+        <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <picture class="team-picture">
-                <source
-                  srcset="
-                    ./images/ourTeam1-desktop-1x.jpg 1x,
-                    ./images/ourTeam1-desktop-2x.jpg 2x
-                  "
-                  media="(min-width: 1158px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam1-tab-1x.jpg 1x,
-                    ./images/ourTeam1-tab-2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam1-mob-1x.jpg 1x,
-                    ./images/ourTeam1-mob-2x.jpg 2x
-                  "
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./images/ourTeam1.jpg"
-                  alt="our-team-1"
-                  width="264"
-                  height="260"
-                />
-              </picture>
-
+              <img
+                src="./images/ourTeam1-desktop-1x.jpg"
+                alt="our team 1"
+                width="264"
+                height="260"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle-team">Mark Guerrero</h3>
                 <p class="section-text-team">Product Designer</p>
@@ -292,35 +275,12 @@
             </li>
 
             <li class="team-list-item">
-              <picture class="team-picture">
-                <source
-                  srcset="
-                    ./images/ourTeam2-desktop-1x.jpg 1x,
-                    ./images/ourTeam2-desktop-2x.jpg 2x
-                  "
-                  media="(min-width: 1158px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam2-tab-1x.jpg 1x,
-                    ./images/ourTeam2-tab-2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam2-mob-1x.jpg 1x,
-                    ./images/ourTeam2-mob-2x.jpg 2x
-                  "
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./images/ourTeam2.jpg"
-                  alt="our-team-2"
-                  width="264"
-                  height="260"
-                />
-              </picture>
+              <img
+                src="./images/ourTeam2-desktop-1x.jpg"
+                alt="our team 2"
+                width="264"
+                height="260"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle-team">Tom Ford</h3>
                 <p class="section-text-team">Frontend Developer</p>
@@ -375,35 +335,12 @@
             </li>
 
             <li class="team-list-item">
-              <picture class="team-picture">
-                <source
-                  srcset="
-                    ./images/ourTeam3-desktop-1x.jpg 1x,
-                    ./images/ourTeam3-desktop-2x.jpg 2x
-                  "
-                  media="(min-width: 1158px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam3-tab-1x.jpg 1x,
-                    ./images/ourTeam3-tab-2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam3-mob-1x.jpg 1x,
-                    ./images/ourTeam3-mob-2x.jpg 2x
-                  "
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./images/ourTeam3.jpg"
-                  alt="our-team-3"
-                  width="264"
-                  height="260"
-                />
-              </picture>
+              <img
+                src="./images/ourTeam3-desktop-1x.jpg"
+                alt="our team 3"
+                width="264"
+                height="260"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle-team">Camila Garcia</h3>
                 <p class="section-text-team">Marketing</p>
@@ -458,35 +395,12 @@
             </li>
 
             <li class="team-list-item">
-              <picture class="team-picture">
-                <source
-                  srcset="
-                    ./images/ourTeam4-desktop-1x.jpg 1x,
-                    ./images/ourTeam4-desktop-2x.jpg 2x
-                  "
-                  media="(min-width: 1158px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam4-tab-1x.jpg 1x,
-                    ./images/ourTeam4-tab-2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/ourTeam4-mob-1x.jpg 1x,
-                    ./images/ourTeam4-mob-2x.jpg 2x
-                  "
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./images/ourTeam1.jpg"
-                  alt="our-team-4"
-                  width="264"
-                  height="260"
-                />
-              </picture>
+              <img
+                src="./images/ourTeam4-desktop-1x.jpg"
+                alt="our team 4"
+                width="264"
+                height="260"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle-team">Daniel Wilson</h3>
                 <p class="section-text-team">UI Designer</p>
@@ -547,10 +461,9 @@
           </ul>
         </div>
       </section>
-
       <!------------ Section 4 portfolio ------------>
       <section class="portfolio">
-        <div class="container">
+        <div class="container portfolio-container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
@@ -893,6 +806,8 @@
     </footer>
 
     <!------------ Modal ------------>
+    <!-- <div class="backdrop"></div>-->
+
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button">

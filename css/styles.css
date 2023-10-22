@@ -11,14 +11,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  margin: 0;
+  }
 
 ul {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -31,8 +29,7 @@ li {
 
 img {
   display: block;
-  object-fit: cover;
-}
+  }
 
 /*============ Body ============ */
 body {
@@ -48,7 +45,8 @@ body {
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -74,7 +72,8 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  margin: 17.5px 0;
+  margin-top: 17.5px;
+  margin-left: 16px;
 }
 
 .studio {
@@ -125,6 +124,7 @@ nav a {
 }
 
 .menu-link {
+  color: #2E2F42;
   position: relative;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,7 +137,6 @@ nav a {
 .current::after {
   content: "";
   position: absolute;
-  /* left: 0; */
   bottom: -1px;
   display: block;
   height: 4px;
@@ -145,7 +144,6 @@ nav a {
   margin-top: 20px;
   background-color: #404bbf;
   border-radius: 2px;
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   transition: width 300ms ease-in-out;
 }
 
@@ -169,7 +167,6 @@ nav a {
   display: flex;
   gap: 40px;
   align-items: center;
-  /*  display: none; */
 }
 
 .contacts-list-item {
@@ -202,10 +199,10 @@ nav a {
 }
 
 .menu-open-btn-mob {
-  padding: 16px;
+  padding: 0 0;
   border-style: none;
   background: transparent;
-  margin-left: auto;
+   margin-left: auto;
   border-style: none;
 }
 
@@ -222,11 +219,7 @@ nav a {
   pointer-events: auto;
   position: fixed;
   overflow: auto;
-  /*
-  display: flex;
-  flex-direction: column;
-     justify-content: space-between; */
-}
+  }
 
 .menu-close-btn {
   width: 24px;
@@ -534,26 +527,24 @@ nav a {
 
 /*============ Portfolio ============ */
 .portfolio {
-  padding: 120px 0 120px 0;
-  /*
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0;
   padding-top: 96px;
-  padding-bottom: 96px;*/
+  padding-bottom: 96px;
 }
 
 .portfolio-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
-  row-gap: 48px;
+  gap: 48px;
 }
 
 .portfolio-list-item {
-  max-width: 288px;
-  max-height: 400px;
+  gap: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -579,7 +570,7 @@ nav a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 40px 32px;
+  padding: 40px 32px 164px;
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
@@ -1174,7 +1165,7 @@ nav a {
   .feature-list {
     flex-direction: row;
     flex-wrap: wrap;
-  }
+    }
 
   .social-media-container-feature {
     display: none;
@@ -1259,24 +1250,23 @@ nav a {
 
 /* Styles for desktops (1158px and above) */
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .header-navigation {
+    margin: 0;
   }
 
-  .container.container-navigation {
+  .container {
+    max-width: 1158px;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .container-navigation {
     display: flex;
-    align-items: center;
   }
 
   .logo {
     margin-right: 76px;
-  }
-
-  .navigation-menu {
-    display: flex;
-    align-items: center;
   }
 
   .navigation-list {
@@ -1284,6 +1274,14 @@ nav a {
     justify-content: flex-start;
     gap: 40px;
     padding-right: 156px;
+  }
+
+  .navigation-list-item {
+    font-weight: 500;
+    color: #434455;
+    display: flex;
+    gap: 40px;
+    font-style: normal;
   }
 
   .contacts-list {
@@ -1313,6 +1311,7 @@ nav a {
     color: #f4f4fd;
     padding: 188px 0;
     max-width: 1440px;
+    margin: 0 auto;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -1345,7 +1344,7 @@ nav a {
     }
 
     .feature-item {
-      max-width: 264px;
+      width: 264px;
     }
     /*
       width: calc((100% - 72px) / 4);*/
@@ -1367,12 +1366,13 @@ nav a {
   }
 
   .container.container-feature {
-    padding: 0;
+    max-width: 1158px;
+    padding: 0 0;
   }
 
   .container.team-container {
     max-width: 1158px;
-    padding: 0 0;
+    padding: 0;
   }
 
   .team {
@@ -1457,7 +1457,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    column-gap: 24px;
     flex-shrink: 0;
     flex-wrap: wrap;
     row-gap: 48px;
@@ -1467,8 +1467,8 @@ nav a {
   }
 
   .portfolio-list-item {
-    width: 360px;
-    height: 360px;
+    max-width: 360px;
+    max-height: 420px;
     flex-shrink: 0;
     width: calc((100%-48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1504,8 +1504,9 @@ nav a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .portfolio.container {
-    transform: translateY(0%);
+  .container.portfolio.container {
+    max-width: 1158px;
+    padding: 0;
   }
 
   .portfolio-list-item-img-text {
@@ -1516,7 +1517,6 @@ nav a {
   .section-subtitle-portfolio {
     margin-bottom: 8px;
   }
-
 
   .footer{
     padding: 100px 0;
